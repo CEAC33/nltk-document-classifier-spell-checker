@@ -34,3 +34,14 @@ nltk
 matplotlib
 numpy
 </code></pre></figure>
+
+```
+$ ipython
+
+In [1]: import nltk
+
+In [2]: nltk.download()
+```
+
+Collections > all > Download
+
