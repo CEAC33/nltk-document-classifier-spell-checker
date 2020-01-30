@@ -35,6 +35,8 @@ matplotlib
 numpy
 </code></pre></figure>
 
+### Installing and Setting Up NLTK
+
 ```
 $ ipython
 
@@ -45,3 +47,22 @@ In [2]: nltk.download()
 
 Collections > all > Download
 
+### NLTK Accessing Texts
+
+<figure><code><b><sup>accessing-texts.py</sup></b></code><pre lang="python"><code>
+from nltk.book import *
+
+#Access texts by calling out their names
+print(text1)
+
+# texts() function
+print(texts())
+
+# sents() function
+print(sents(), end='\n\n\n')
+
+# access sentences individually
+print(sent1)
+</code></pre></figure>
+
+### Basic Functions: concordance, similar, dispersion_plot, count
