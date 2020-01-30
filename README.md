@@ -126,12 +126,43 @@ print(text4.count('freedom'))
 
 # we can calculate the percentage of a word occurring in the text
 
-#print(100 * (text4.count('freedom')/len(text4)))
+print(100 * (text4.count('freedom')/len(text4)))
 
 print('\n\n\n')
 ```
-
 </figure>
 
 **Dispersion Plot**
 ![alt text](https://user-images.githubusercontent.com/51218415/73476468-e61b8380-4357-11ea-976a-e9c2db1c1010.png)
+
+### Frequency Distribution with NLTK
+
+<figure><code><b><sup>frequency-distributions.py</sup></b></code>
+
+```python
+from nltk.book import *
+
+
+print('\n\n\n')
+distribution_1 = FreqDist(text1)
+print(distribution_1, end='\n\n')
+
+words = distribution_1.keys()
+print(type(words))
+print(words)
+words_list = list(words)
+print(words_list[:10])
+
+print(distribution_1['whale'])
+
+# plot function
+
+distribution_1.plot(50)
+```
+</figure>
+
+**Frequency Distribution**
+![alt text](
+https://user-images.githubusercontent.com/51218415/73483135-92fbfd80-4364-11ea-820d-bbf2fc038fff.png
+)
+
