@@ -29,7 +29,7 @@ pip3 install nltk
 pip3 install matplotlib
 ```
 
-<figure><code><b>requirements.txt</b></code><pre overflow: auto;><code>
+<figure><code><b><sup>requirements.txt</sup></b></code><pre overflow: auto;><code>
 nltk
 matplotlib
 numpy
